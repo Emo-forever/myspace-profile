@@ -1,152 +1,85 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Myspace Profile</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <style type="text/css">
-        /* Background settings */
-        body {
-            background-color: #000000 !important;
-            background-image: url('your-background-image-url.jpg');
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            font-family: Arial, sans-serif;
-            color: #ffffff;
-        }
+<style type="text/css">
+    body {
+        background-color: #000000;
+        background-image: url('your-background-image-url.jpg');
+        background-attachment: fixed;
+        background-position: top center;
+        background-repeat: no-repeat;
+        font-family: Arial, sans-serif;
+        color: #FFFFFF;
+    }
 
-        /* Main container styling */
-        .container {
-            width: 850px;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.8);
-            border: 2px solid #ff00ff;
-            box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
-            padding: 20px;
-        }
+    a {
+        color: #00FFFF;
+        text-decoration: none;
+    }
 
-        /* Profile picture and info box */
-        .profile-picture-box {
-            background-color: #222222;
-            padding: 15px;
-            margin-bottom: 20px;
-            text-align: center;
-            border: 2px solid #00ffff;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-        }
+    a:hover {
+        color: #FF00FF;
+        text-decoration: underline;
+    }
 
-        .profile-picture {
-            border: 5px solid #ff00ff;
-            border-radius: 10%;
-            width: 150px;
-            height: 150px;
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
-        }
+    .container {
+        width: 850px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 2px solid #FF00FF;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    }
 
-        .profile-info {
-            color: #ff00ff;
-            font-weight: bold;
-            margin-top: 10px;
-        }
+    .profile-box {
+        background-color: #111111;
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 2px solid #00FFFF;
+        box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+    }
 
-        /* Box styling for sections */
-        .box {
-            background-color: #2A2A2A;
-            padding: 15px;
-            margin-bottom: 20px;
-            border: 2px solid #ff00ff;
-            box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
-        }
+    .profile-picture {
+        border: 5px solid #FF00FF;
+        border-radius: 10%;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 10px;
+        box-shadow: 0 0 15px rgba(255, 0, 255, 0.7);
+    }
 
-        h2 {
-            color: #00ffff;
-            font-size: 18px;
-            border-bottom: 2px solid #ff00ff;
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
+    .profile-info {
+        color: #FF00FF;
+        font-weight: bold;
+    }
 
-        a {
-            color: #ff00ff;
-            text-decoration: none;
-            font-weight: bold;
-        }
+    .content-box {
+        background-color: #111111;
+        padding: 15px;
+        border: 2px solid #00FFFF;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    }
 
-        a:hover {
-            text-decoration: underline;
-            color: #00ffff;
-        }
+    h2 {
+        color: #FF00FF;
+        font-size: 18px;
+        border-bottom: 2px solid #00FFFF;
+        padding-bottom: 5px;
+        margin-bottom: 10px;
+    }
+</style>
 
-        /* Comment section */
-        .comment-box {
-            background-color: #333333;
-            padding: 10px;
-            border: 1px solid #00ffff;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-            margin-bottom: 15px;
-        }
-
-        /* Friend section images */
-        .friends-section img {
-            width: 70px;
-            height: 70px;
-            border: 3px solid #00ffff;
-            margin-right: 10px;
-            box-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
-        }
-
-        /* Music player styling */
-        .music-player {
-            margin: 20px 0;
-        }
-
-    </style>
-</head>
-<body>
-    <div class="container">
-        <!-- Profile Picture Box -->
-        <div class="profile-picture-box">
-            <img src="profile-pic.jpg" alt="Profile Picture" class="profile-picture">
-            <p class="profile-info">Username<br>Location: Miami, FL<br>Online Now!</p>
-        </div>
-
-        <!-- About Me Section -->
-        <div class="box">
-            <h2>About Me</h2>
-            <p>This is where you describe yourself. Add cool facts or anything you like!</p>
-        </div>
-
-        <!-- Interests Section -->
-        <div class="box">
-            <h2>Interests</h2>
-            <p>General: just meet me once<br>Music: Chamillionaire - Groove Armada - DJ Tarkan<br>Movies: Action and comedy</p>
-        </div>
-
-        <!-- Friend Space Section -->
-        <div class="box friends-section">
-            <h2>Friend Space</h2>
-            <img src="friend1.jpg" alt="Friend 1">
-            <img src="friend2.jpg" alt="Friend 2">
-            <img src="friend3.jpg" alt="Friend 3">
-            <p><a href="#">View All of My Friends</a></p>
-        </div>
-
-        <!-- Music Player Section -->
-        <div class="music-player">
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/insert-track-id-here&color=%2300ff00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
-        </div>
-
-        <!-- Comments Section -->
-        <div class="box comment-box">
-            <h2>Comments</h2>
-            <p><strong>Friend:</strong> Nice profile! Keep in touch!</p>
-            <p><strong>Friend 2:</strong> Love the new look of your page!</p>
-        </div>
+<div class="container">
+    <div class="profile-box">
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-picture">
+        <p class="profile-info">Username<br>Location: City, Country<br>Online Now!</p>
     </div>
-</body>
-</html>
+
+    <div class="content-box">
+        <h2>About Me</h2>
+        <p>This is where you describe yourself.</p>
+    </div>
+
+    <div class="content-box">
+        <h2>Friends</h2>
+        <p>Friend list goes here.</p>
+    </div>
+</div>
 
