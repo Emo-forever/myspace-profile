@@ -3,63 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Retro Myspace Profile</title>
+    <title>Myspace Profile Layout</title>
     <style>
         body {
-            background-color: #333;
-            color: #fff;
+            background-color: #f2f2f2;
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+            color: #333;
         }
 
         .container {
-            width: 800px;
+            width: 900px;
             margin: 0 auto;
+            background-color: #fff;
             padding: 20px;
-            background-color: #444;
-            border: 5px solid #555;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 1px solid #ccc;
         }
 
-        .header {
-            text-align: center;
+        .profile-section {
+            display: flex;
+            justify-content: space-between;
             margin-bottom: 20px;
-            padding: 10px;
-            background-color: #222;
-            border-bottom: 2px solid #555;
         }
 
-        .header img {
-            border-radius: 50%;
-            border: 5px solid #555;
+        .left-column, .right-column {
+            width: 45%;
         }
 
-        .bio {
-            padding: 10px;
-            background-color: #555;
+        .box {
+            background-color: #e0e0e0;
+            padding: 15px;
             margin-bottom: 20px;
-            border-radius: 10px;
+            border: 1px solid #999;
         }
 
-        .friends {
-            background-color: #666;
-            padding: 10px;
-            border-radius: 10px;
+        .box h2 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 5px;
         }
 
-        .friends img {
-            width: 100px;
-            height: 100px;
-            margin: 10px;
-            border: 3px solid #333;
-        }
-
-        .music-embed {
-            margin-top: 20px;
-            background-color: #555;
-            padding: 10px;
-            border-radius: 10px;
+        .friends-section img {
+            width: 60px;
+            height: 60px;
+            margin-right: 10px;
+            border: 2px solid #333;
         }
 
         a {
@@ -70,36 +58,54 @@
         a:hover {
             text-decoration: underline;
         }
-
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Your Myspace Profile Name</h1>
-            <img src="profile-pic.jpg" alt="Profile Picture" width="150" height="150">
-        </div>
+        <div class="profile-section">
+            <div class="left-column">
+                <div class="box">
+                    <h2>Profile Info</h2>
+                    <p>Male<br>25 years old<br>Miami Beach, USA</p>
+                    <p>Last Login: 7/22/2007</p>
+                    <p><a href="#">View My: Pics | Videos</a></p>
+                </div>
 
-        <div class="bio">
-            <h2>About Me</h2>
-            <p>Write a short bio about yourself. Customize it with fun colors, bold text, and quirky descriptions.</p>
-        </div>
+                <div class="box">
+                    <h2>Contact Info</h2>
+                    <p><img src="contact-icon1.png" alt="Contact"><img src="contact-icon2.png" alt="Contact"><img src="contact-icon3.png" alt="Contact"></p>
+                    <p>MySpace URL:<br><a href="#">http://www.myspace.com/your-profile</a></p>
+                </div>
 
-        <div class="friends">
-            <h2>Top Friends</h2>
-            <div class="friend-list">
-                <img src="friend1.jpg" alt="Friend 1">
-                <img src="friend2.jpg" alt="Friend 2">
-                <img src="friend3.jpg" alt="Friend 3">
-                <!-- Add more friends as needed -->
+                <div class="box">
+                    <h2>Interests</h2>
+                    <p>General: just meet me once<br>Music: Chamillionaire - Groove Armada - DJ Tarkan<br>Movies: Action and comedy<br>Television: Avrupa Yakası<br>Books: Books<br>Heroes: me :)</p>
+                </div>
             </div>
-        </div>
 
-        <div class="music-embed">
-            <h2>My Music</h2>
-            <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/insert-track-id-here&color=%2300ff00&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
-            </iframe>
+            <div class="right-column">
+                <div class="box">
+                    <h2>About Me</h2>
+                    <p>Living in Miami. And this text is an example text, your text will appear like this.</p>
+                </div>
+
+                <div class="box friends-section">
+                    <h2>Friend Space</h2>
+                    <div>
+                        <img src="friend1.jpg" alt="Friend 1">
+                        <img src="friend2.jpg" alt="Friend 2">
+                        <img src="friend3.jpg" alt="Friend 3">
+                        <!-- Add more friends -->
+                    </div>
+                    <p><a href="#">View All of My Friends</a></p>
+                </div>
+
+                <div class="box">
+                    <h2>Comments</h2>
+                    <p>Displaying 4 of 30 comments (<a href="#">View All</a> | <a href="#">Add Comment</a>)</p>
+                    <p><strong>evren</strong><br>Jul 17 2007 6:56A</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
