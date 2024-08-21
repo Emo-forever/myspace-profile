@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
     <style>
         body {
-            background-color: #5499C7;
-            font-family: Trirong, sans-serif;
+            background-color: #f2f2f2;
+            font-family: "Trirong", serif;
             color: #333;
         }
 
@@ -18,11 +18,24 @@
             background-color: #fff;
             padding: 20px;
             border: 1px solid #ccc;
+            position: relative;
+        }
+
+        .profile-picture {
+            position: absolute;
+            top: -50px; /* Adjust this value to position it above the container */
+            left: 20px;
+            border: 5px solid #fff; /* White border around the image */
+            border-radius: 50%; /* Circular image */
+            width: 120px; /* Adjust size as needed */
+            height: 120px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add shadow for effect */
         }
 
         .profile-section {
             display: flex;
             justify-content: space-between;
+            margin-top: 80px; /* Adjust for space to accommodate the profile picture */
             margin-bottom: 20px;
         }
 
@@ -63,6 +76,9 @@
 </head>
 <body>
     <div class="container">
+        <!-- Profile Picture Section -->
+        <img src="profile-pic.jpg" alt="Profile Picture" class="profile-picture">
+
         <div class="profile-section">
             <div class="left-column">
                 <div class="box">
