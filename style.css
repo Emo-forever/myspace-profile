@@ -1,11 +1,8 @@
 body {
-    font-family: 'Courier New', monospace;
-    background-color: #1a1a1a;
-    color: #e6e6e6;
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
     margin: 0;
     padding: 0;
-    background-image: url('background.jpg');
-    background-size: cover;
 }
 
 .container {
@@ -15,92 +12,39 @@ body {
     padding: 20px;
 }
 
-.header {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0;
-    border-bottom: 2px solid #444;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.header h1 {
-    font-size: 36px;
-    color: #ff66cc;
-}
-
-.header p {
-    font-size: 18px;
-    color: #ffccff;
-    font-style: italic;
-}
-
 .left-column {
     width: 30%;
     padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-right: 2px solid #444;
-}
-
-.profile-pic img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.profile-details h2 {
-    color: #ff66cc;
-}
-
-.profile-details ul {
-    list-style: none;
-    padding: 0;
-}
-
-.profile-details ul li {
-    margin-bottom: 10px;
-    font-size: 14px;
+    background-color: #f0f0f0;
+    border-right: 2px solid #ccc;
 }
 
 .right-column {
     width: 70%;
     padding: 10px;
+    background-color: #fff;
 }
 
-.about-me h2, .top-friends h2, .comment-section h2 {
-    color: #ff66cc;
-    border-bottom: 1px solid #ff66cc;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+.profile-details, .schools, .comments {
+    margin-bottom: 20px;
 }
 
-.about-me p {
-    font-size: 16px;
+.profile-details h2, .schools h2, .comments h2 {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 5px;
+    font-size: 18px;
 }
 
-.top-friends {
-    margin-top: 20px;
-}
-
-.friends-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
-
-.friend {
-    background-color: #333;
+.profile-details ul, .comments .comment {
+    background-color: #d3e5ff;
     padding: 10px;
-    text-align: center;
-    color: #ffccff;
+    margin-top: 5px;
     border-radius: 5px;
 }
 
-.comment-section {
-    margin-top: 20px;
+.comments .comment {
+    background-color: #ffd1b3;
+    margin-bottom: 10px;
 }
 
-.comment {
-    background-color: #333;
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
