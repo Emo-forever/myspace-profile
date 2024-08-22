@@ -91,3 +91,13 @@ p {
     margin-bottom: 10px;
     border: 2px solid #ff69b4;
 }
+.video-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 28px;
+    color: #ff69b4;
+    margin-bottom: 10px;
+}
