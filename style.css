@@ -21,13 +21,39 @@ body {
     width: 48%;
 }
 
+.profile-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
 .profile-picture img {
     width: 150px;  
     height: 150px; 
-    border-radius: 0; 
-    margin-bottom: 20px;
+    border-radius: 0; /* Square image */
+    margin-right: 20px;
     object-fit: cover;
     border: 2px solid #ff69b4; 
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-text {
+    margin-bottom: 10px;
+}
+
+.profile-text p {
+    margin: 5px 0;
+    color: white;
+}
+
+.profile-mood {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: white;
+    font-size: 14px;
 }
 
 .profile-details, .contact-me, .blog-section, .friend-space {
@@ -65,4 +91,3 @@ p {
     margin-bottom: 10px;
     border: 2px solid #ff69b4;
 }
-
