@@ -1,136 +1,115 @@
-div.wrap { 
-  width:80%; 
- } 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  div,div.content,div.wrap  { 
-  background-color:transparent; 
- } 
+body {
+  background-color: #ffffff;
+  background-image: url("https://www.ableammo.com/catalog/images/ssi-2014/85149.jpg");
+  background-position: top left;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  scrollbar-face-color: #66FF22;
+  scrollbar-highlight-color: #FF2288;
+  scrollbar-3dlight-color: #ffffff;
+  scrollbar-shadow-color: #777777;
+  scrollbar-darkshadow-color: #333333;
+  scrollbar-arrow-color: #000000;
+  scrollbar-track-color: #22AA22;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
 
-  body  { 
-  background-color:#ffffff; 
- background-image:url("https://www.ableammo.com/catalog/images/ssi-2014/85149.jpg"); 
- background-position:Top Left; 
- background-attachment:fixed; 
- background-repeat:no-repeat; 
- border-width:0px; 
- border-style:Solid; 
- scrollbar-face-color:#66FF22; 
- scrollbar-highlight-color:#FF2288; 
- scrollbar-3dlight-color:#ffffff; 
- scrollbar-shadow-color:#777777; 
- scrollbar-darkshadow-color:#333333; 
- scrollbar-arrow-color:#000000; 
- scrollbar-track-color:#22AA22; 
- } 
+.container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: transparent;
+}
 
-  div#header, div#googlebar, div#topnav, ul.profileUserAlbum li, div.content, div.module, div.contentTop, div.blurbsModule h3, div.companiesModule li.moduleItem, div.blogsModule h3, div.calendarModule h3, div.friendSpaceModule h3, div.schoolsModule li.moduleItem, div.networkingModule li.moduleItem, div.interestsModule li, ul.profileUserAlbum li, div.photo, div.profileHeaderModule, div.profileDemographics, div.contentMid, div.detailsModule li, div.commentsModule h3,  div.commentsModule ul.moduleList li, div.commentsModule div.userComment, div.blurbsModule, h3.moduleHead span, div.profileDemographics, ul.profileUserInfo, div.userComment, li.odd, div.moduleBody, div.moduleList, div.moduleHead, h3.moduleHead, h3.moduleHead span span  { 
-  background-color:transparent; 
- border:none; 
- border-width:0 px; 
- } 
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
 
-  div.module  { 
-  background-image:url("https://ct.pimp-my-profile.com/tp/000000-70-tp.png"); 
- background-repeat:repeat; 
- background-attachment:fixed; 
- background-color:transparent; 
- } 
+.header h1 {
+  font-size: 36px;
+  color: #ff1493;
+}
 
-  div.module  { 
-  border-style:Solid; 
- border-width:0px; 
- } 
+.header p {
+  font-size: 18px;
+  color: #ff69b4;
+}
 
-  div.content  { 
-  border-style:Solid; 
- border-width:0px; 
- } 
+.profile-details, .friend-space, .blog-section {
+  background-color: #2a2a2a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+}
 
-  div[class~="moduleTop"],
-					div[class~="moduleTop"] div,
-					div[class~="moduleBottom"],
-					div[class~="moduleBottom"] div { 
-  background-color:transparent; 
- background-image:none; 
- font-size:0px; 
- } 
+.profile-details h2, .friend-space h2, .blog-section h2 {
+  font-size: 28px;
+  color: #ff69b4;
+}
 
-  div[class~="moduleTop"] div div,
-					div[class~="moduleBottom"] div div { 
-  background-image:none; 
- } 
+.friend-list {
+  display: flex;
+  justify-content: space-around;
+}
 
-  div[class~="moduleTop"] div div { 
-  height:5px; 
- border-top:none; 
- } 
+.friend {
+  text-align: center;
+}
 
-  div[class~="moduleBottom"] div div { 
-  border-bottom:none; 
- } 
+.friend img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  border: 2px solid #ff69b4;
+}
 
-  div[class~="moduleMid"] { 
-  border-left:none; 
- } 
+.friend p {
+  font-size: 16px;
+}
 
-  div[class~="moduleMid1"] { 
-  border-right:none; 
- } 
+.blog-post {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #3a3a3a;
+  border-radius: 8px;
+  border: 1px solid #555;
+}
 
-  .pmp_topleft { 
-  position:absolute; top: 0px; left: 0px; 
- } 
+.blog-post h3 {
+  font-size: 22px;
+  color: #ff69b4;
+  margin-bottom: 5px;
+}
 
-  div.contentTop { 
-  background-image:url("https://ct.pimp-my-profile.com/i94/3/11/18/f_faff2fc846d7.gif"); 
- padding-top:20px; 
- background-repeat:no-repeat; 
- background-position:top left; 
- } 
+.blog-date {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
 
-  table, tr, td, li, p, div, div.moduleBody, div.commentsModule p.datePosted, span.count { 
-  color:#ffffff; 
- font-size:12pt; 
- font-family:Papyrus; 
- } 
+.blog-post p {
+  font-size: 18px;
+  color: #e6e6e6;
+}
 
-   h3.moduleHead, h3.moduleHead span  { 
-  color:#000000; 
- font-size:12pt; 
- font-family:comic sans ms; 
- } 
+a:active, a:visited, a:link {
+  color: #FF2288;
+  font-family: Papyrus;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-   div.blurbAboutMe h4, div.blurbLikeToMeet h4, div.interestsModule li h4, div.detailsModule li strong { 
-  color:#66FF22; 
- font-size:12pt; 
- font-family:Papyrus; 
- } 
-
-  div.basicInfoDetails h2 { 
-  color:#000000; 
- font-size:16pt; 
- font-family:Papyrus; 
- font-weight:bold; 
- } 
-
-  a:active, a:visited, a:link, div.moduleBody a:active, div.moduleBody a:visited  { 
-  color:#FF2288; 
- font-size:12pt; 
- font-family:Papyrus; 
- font-weight:bold; 
- text-decoration:underline; 
- } 
-
-  a:hover, div.moduleBody a:hover  { 
-  color:#eeeeee; 
- font-size:18pt; 
- font-family:Papyrus; 
- font-weight:bold; 
- text-decoration:underline; 
- } 
-
-  div.contentMid2 { 
-  background-image:url("https://wheninmanila.blob.core.windows.net/wheninmanilabucket/2019/04/Harder-Than-You-Know.png"); 
- background-repeat:no-repeat; 
- background-position:center top; 
- padding-top:140px; 
+a:hover {
+  color: #eeeeee;
+  font-size: 18pt;
+  font-family: Papyrus;
+  text-decoration: underline;
+}
