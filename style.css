@@ -81,7 +81,7 @@ p {
 }
 
 .friend {
-    text-align: left;
+    text-align: center;
 }
 
 .friend img {
@@ -93,7 +93,7 @@ p {
 }
 .video-section {
     margin: 20px 0;
-    text-align: center;
+    text-align: left;
 }
 
 .video-section h2 {
