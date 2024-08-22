@@ -22,9 +22,12 @@ body {
 }
 
 .profile-picture img {
-    width: 100%;
-    border-radius: 50%;
+    width: 150px;  /* Set the width to a smaller size, adjust as needed */
+    height: 150px; /* Set the height to match the width for a square shape */
+    border-radius: 0; /* Remove the rounded edges to keep it square */
     margin-bottom: 20px;
+    object-fit: cover; /* Ensures the image fits the square dimensions */
+    border: 2px solid #ff69b4; /* Optional: add a border, adjust the color as needed */
 }
 
 .profile-details, .contact-me, .blog-section, .friend-space {
