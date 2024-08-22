@@ -30,8 +30,8 @@ body {
 }
 
 .profile-picture img {
-    width: 200px;  
-    height: 200px; 
+    width: 150px;  
+    height: 150px; 
     border-radius: 0; /* Square image */
     margin-right: 20px;
     object-fit: cover;
